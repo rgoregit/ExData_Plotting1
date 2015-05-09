@@ -30,9 +30,10 @@ getData <- function (){
   # Unzip file and get Data file in working dir
   unzip(zfname,files=datafile)
   # Read data file and return  Data Frame
-  invisible(read.csv(datafile ,sep=";",header=TRUE, na.string="?", colClasses=c("character", "character", "numeric",
-                                                                           "numeric", "numeric", "numeric",
-                                                                           "numeric", "numeric", "numeric")))
+  invisible(read.csv(datafile ,sep=";",header=TRUE, na.string="?",
+                     colClasses=c("character", "character", "numeric",
+                                 "numeric", "numeric", "numeric",
+                                 "numeric", "numeric", "numeric")))
 
 }
 
